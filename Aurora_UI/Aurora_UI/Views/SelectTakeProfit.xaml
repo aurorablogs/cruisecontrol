@@ -1,0 +1,11 @@
+﻿<Window x:Class="Aurora_UI.Views.SelectTakeProfit"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="SelectTakeProfit" Height="300" Width="300">
+    <Grid>
+        <CheckBox Content="Take Profit 1" HorizontalAlignment="Left" Margin="83,53,0,0" VerticalAlignment="Top"/>
+        <CheckBox Content="CheckBox" HorizontalAlignment="Left" Margin="83,118,0,0" VerticalAlignment="Top"/>
+        <CheckBox Content="CheckBox" HorizontalAlignment="Left" Margin="83,172,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.507,8.533"/>
+
+    </Grid>
+</Window>
