@@ -1,9 +1,11 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aurora_UI", "Aurora_UI\Aurora_UI.csproj", "{DD6A7880-D60B-45BD-8401-5BC2BCC48250}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Server", "Server\Server.csproj", "{988813A4-70B2-4887-AF83-CD9322A3F3BC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DFsimulator", "DFsimulator\DFsimulator.csproj", "{608DE6A1-D073-4D3B-92AB-7EAC01137F0E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,6 +37,16 @@ Global
 		{988813A4-70B2-4887-AF83-CD9322A3F3BC}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{988813A4-70B2-4887-AF83-CD9322A3F3BC}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{988813A4-70B2-4887-AF83-CD9322A3F3BC}.Release|x86.ActiveCfg = Release|Any CPU
+		{608DE6A1-D073-4D3B-92AB-7EAC01137F0E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{608DE6A1-D073-4D3B-92AB-7EAC01137F0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{608DE6A1-D073-4D3B-92AB-7EAC01137F0E}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{608DE6A1-D073-4D3B-92AB-7EAC01137F0E}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{608DE6A1-D073-4D3B-92AB-7EAC01137F0E}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{608DE6A1-D073-4D3B-92AB-7EAC01137F0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{608DE6A1-D073-4D3B-92AB-7EAC01137F0E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{608DE6A1-D073-4D3B-92AB-7EAC01137F0E}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{608DE6A1-D073-4D3B-92AB-7EAC01137F0E}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{608DE6A1-D073-4D3B-92AB-7EAC01137F0E}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
