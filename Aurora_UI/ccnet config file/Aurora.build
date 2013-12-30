@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <project name="Trade Simulator" default="TestCases">
 	<target name="build.Project">
+<delete dir="C:/results" />
 		<exec program="C:\Windows\Microsoft.NET\Framework\v4.0.30319\MSBuild.exe">
 			<arg value="D:\Repos\cruisecontrol\Aurora_UI\Aurora_UI.sln" />
 			<arg value="/t:Rebuild" />
