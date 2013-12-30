@@ -17,7 +17,9 @@
 				<assemblies>
 					<includesfile name="UnitTestAssemblies.txt" />
 				</assemblies>
-
+				<categories>
+					<include name="Unit" />
+				</categories>
 			</test>
 		</nunit2>
 
