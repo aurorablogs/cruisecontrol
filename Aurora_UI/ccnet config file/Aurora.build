@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project name="Trade Simulator" default="">
+	<target name="build.Project">
+		<exec program="C:\Windows\Microsoft.NET\Framework\v4.0.30319\MSBuild.exe">
+			<arg value="D:\Repos\cruisecontrol\Aurora_UI\Aurora_UI.sln" />
+			<arg value="/t:Rebuild" />
+			<arg value="/p:Configuration=Release" />
+		</exec>
+	</target>
+	<target name="TestCases" depends="build.Project">
+		
+		<nunit2 haltonfailure="False" failonerror="True">
+			<formatter type="Xml" usefile="true" extension=".xml" outputdir="C:/results" />
+			
+			<test>
+				<assemblies>
+					<includesfile name="UnitTestAssemblies.txt" />
+				</assemblies>
+				<categories>
+					<include name="Unit" />
+				</categories>
+			</test>
+		</nunit2>
+
+	</target>
+</project>

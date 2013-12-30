@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Server", "Server\Server.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DFsimulator", "DFsimulator\DFsimulator.csproj", "{608DE6A1-D073-4D3B-92AB-7EAC01137F0E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Server.Tests", "Server.Tests\Server.Tests.csproj", "{55FF9704-80C8-4003-9A80-54D8619AC644}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -47,6 +49,16 @@ Global
 		{608DE6A1-D073-4D3B-92AB-7EAC01137F0E}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{608DE6A1-D073-4D3B-92AB-7EAC01137F0E}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{608DE6A1-D073-4D3B-92AB-7EAC01137F0E}.Release|x86.ActiveCfg = Release|Any CPU
+		{55FF9704-80C8-4003-9A80-54D8619AC644}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55FF9704-80C8-4003-9A80-54D8619AC644}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55FF9704-80C8-4003-9A80-54D8619AC644}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{55FF9704-80C8-4003-9A80-54D8619AC644}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{55FF9704-80C8-4003-9A80-54D8619AC644}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{55FF9704-80C8-4003-9A80-54D8619AC644}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55FF9704-80C8-4003-9A80-54D8619AC644}.Release|Any CPU.Build.0 = Release|Any CPU
+		{55FF9704-80C8-4003-9A80-54D8619AC644}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{55FF9704-80C8-4003-9A80-54D8619AC644}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{55FF9704-80C8-4003-9A80-54D8619AC644}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
