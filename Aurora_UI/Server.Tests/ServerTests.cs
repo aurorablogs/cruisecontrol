@@ -40,6 +40,7 @@ namespace Server.Tests
           
         }
         [Test]
+        [Category("Unit")]
         public void ServerConnectedTest()
         {
             var manualLogonEvent = new ManualResetEvent(false);
