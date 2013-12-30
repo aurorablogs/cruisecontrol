@@ -13,50 +13,25 @@ namespace Server.Tests
     [TestFixture]
     class ServerTests
     {
-        private Socket clientSocket;
-        private byte[] byteData = new byte[1024];
-        private TcpServer server;
-        [SetUp]
-        public void SetUp()
+        [Test]
+        [Category("Unit")]
+        public void OrderTestCase()
         {
-            
-            clientSocket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
+            var manualLogonEvent = new ManualResetEvent(false);
+            Order order = new Order("1", "AAPL", "Market", "Buy", 100, 0, 0);
 
-            IPAddress ipAddress = IPAddress.Parse("127.0.0.1");
-            //Server is listening on port 1000
-            IPEndPoint ipEndPoint = new IPEndPoint(ipAddress, 1000);
-            
-            //Connect to the server
-            clientSocket.BeginConnect(ipEndPoint, new AsyncCallback(OnConnect), null);
+            Assert.AreEqual(order.ID, "1");
 
-            server = new TcpServer();
-            
-        }
-       
-        private void OnConnect(IAsyncResult ar)
-        {
-          clientSocket.EndConnect(ar);
 
-          
         }
         [Test]
         [Category("Unit")]
-        public void ServerConnectedTest()
+        public void PriceTestCase()
         {
-            var manualLogonEvent = new ManualResetEvent(false);
-            bool connected = false;
-            server.Connected += delegate
-            {
-                connected = true;
-                manualLogonEvent.Set();
-            };
+            Price price=new Price("100","10","99","10","1","AAPL","99");
+            Assert.AreEqual(price.Contract, "AAPL");
 
-            server.start();
-            manualLogonEvent.WaitOne(300000, false);
-            
-            Assert.AreEqual(true,connected);
-           
-           
+
         }
       
     }
