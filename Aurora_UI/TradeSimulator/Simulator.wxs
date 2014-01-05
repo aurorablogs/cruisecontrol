@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+    <Fragment>
+        <DirectoryRef Id="Simulator" />
+    </Fragment>
+    <Fragment>
+        <ComponentGroup Id="Simulator">
+            <Component Id="cmpF82352D3635C2CBDE30198A6F535F4BC" Directory="Simulator" Guid="C0E178A3-9785-4005-BB48-6ADF6BB4F59A">
+                <File Id="fil2F86DEFDF91DF73E7E4851FDBF81E49C" KeyPath="yes" Source="$(var.Sim)\DFsimulator.exe" />
+            </Component>
+            <Component Id="cmp4B6CFCB7B08BB836E095E0CE2173C33F" Directory="Simulator" Guid="FAFAFBE5-336C-491C-9808-EB72190AB262">
+                <File Id="fil102B6185F90739B60905E0EC43995661" KeyPath="yes" Source="$(var.Sim)\DFsimulator.pdb" />
+            </Component>
+        </ComponentGroup>
+    </Fragment>
+</Wix>

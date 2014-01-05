@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+    <Fragment>
+        <DirectoryRef Id="AuroraUI" />
+    </Fragment>
+    <Fragment>
+        <ComponentGroup Id="AuroraUI">
+            <Component Id="cmpA12166B6A3C0FD57797CF93819D4BF0E" Directory="AuroraUI" Guid="B7022376-73F5-4AEC-8CE8-6AB0FC72DD76">
+                <File Id="fil7DB0FB1E1B3125475EC833808C2CA40E" KeyPath="yes" Source="$(var.UI)\Aurora_UI.exe" />
+            </Component>
+            <Component Id="cmpA463FA5683C50D9F3FDB1CA20406070F" Directory="AuroraUI" Guid="8120C00F-276B-4EFC-A6CD-55633329C893">
+                <File Id="fil10485DDD0402745B27BE3A4516BE72F2" KeyPath="yes" Source="$(var.UI)\Aurora_UI.pdb" />
+            </Component>
+            <Component Id="cmp162C69F42E25F7ADD0E4923CB34AE83D" Directory="AuroraUI" Guid="BC935EDF-77DD-48A2-9EEE-E3499B5CF8A1">
+                <File Id="fil3E5CA04CB0203DE72D21C699A7C40C12" KeyPath="yes" Source="$(var.UI)\Aurora_UI.vshost.exe" />
+            </Component>
+            <Component Id="cmpEDDC1A1E2C38F16CBE884B041B0381E5" Directory="AuroraUI" Guid="B2522B66-3C0F-44D0-B923-77F7ADCF92CF">
+                <File Id="fil8E4D8EEFB81FEB420642E90E7E9A59E3" KeyPath="yes" Source="$(var.UI)\Aurora_UI.vshost.exe.manifest" />
+            </Component>
+            <Component Id="cmp34751D835995153DA2843E6684943A7E" Directory="AuroraUI" Guid="3C1968CF-9968-4490-B7FE-323877B6DA6A">
+                <File Id="fil49B54368A24942E0F684070948553B41" KeyPath="yes" Source="$(var.UI)\Server.dll" />
+            </Component>
+            <Component Id="cmpDBF30A6CDA8302C527D0C0AC261BA3C8" Directory="AuroraUI" Guid="77BC745B-B336-4BFA-8546-54A24E0C8AE7">
+                <File Id="filE898E593F8435F556B8D7CAFA839DDF6" KeyPath="yes" Source="$(var.UI)\Server.pdb" />
+            </Component>
+            <Component Id="cmpE9ABF67FA6F90128A703DA1712C16344" Directory="AuroraUI" Guid="864F1817-89E9-43F8-B577-FAD52496D153">
+                <File Id="fil0827F610B38CFE6406D785419CB5F0A4" KeyPath="yes" Source="$(var.UI)\TraceSourceLogger.dll" />
+            </Component>
+        </ComponentGroup>
+    </Fragment>
+</Wix>

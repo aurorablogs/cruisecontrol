@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+	<Product Id="*" Name="TradeSimulator" Language="1033" Version="1.0.0.0" Manufacturer="Aurora Solutions" UpgradeCode="56eaa8e5-4fbe-4b88-bb9c-79513030bc18">
+		<Package InstallerVersion="200" Compressed="yes" InstallScope="perMachine" />
+
+		<MajorUpgrade DowngradeErrorMessage="A newer version of [ProductName] is already installed." />
+		<MediaTemplate />
+
+		<Feature Id="ProductFeature" Title="TradeSimulator" Level="1">
+			<ComponentGroupRef Id="ProductComponents" />
+		</Feature>
+	</Product>
+
+	<Fragment>
+    <Directory Id="TARGETDIR" Name="SourceDir">
+      <Directory Id="ProgramFilesFolder">
+        <Directory Id="INSTALLFOLDER" Name="TradeSimulator">
+          <Directory Id="AuroraUI" Name="AuroraUI"/>
+          <Directory Id="Simulator" Name="Simulator"/>
+        </Directory>
+      </Directory>
+    </Directory>
+	</Fragment>
+
+	<Fragment>
+		<ComponentGroup Id="ProductComponents" Directory="INSTALLFOLDER">
+      <ComponentGroupRef Id="AuroraUI"/>
+      <ComponentGroupRef Id="Simulator"/>
+		</ComponentGroup>
+	</Fragment>
+</Wix>
