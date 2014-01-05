@@ -9,7 +9,7 @@
 		</exec>
 	</target>
 		<target name="build.Installer" depends="build.Project">
-		<exec program="D:\Repos\cruisecontrol\Aurora_UI\TradeSimulator\WIX_Heat.bat">
+		<exec program="D:\Repos\cruisecontrol\Aurora_UI\TradeSimulator\WIX_Heat.bat" />
 		<exec program="C:\Windows\Microsoft.NET\Framework\v4.0.30319\MSBuild.exe">
 			<arg value="D:\Repos\cruisecontrol\Aurora_UI\TradeSimulator\TradeSimulator.wixproj" />
 			<arg value="/t:Rebuild" />
